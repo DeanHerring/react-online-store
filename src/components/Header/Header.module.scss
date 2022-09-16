@@ -1,0 +1,33 @@
+@import "@styles/all.scss";
+
+// header
+.header {
+	width: 100%;
+	padding: 25px 5%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	&__logo {
+		h1 {
+			font-family: $sans;
+			a {
+				color: $blue;
+			}
+		}
+	}
+	&__icons {
+		display: flex;
+		flex-wrap: wrap;
+		ul {
+			display: flex;
+			align-items: center;
+			li {
+				margin-left: 25px;
+				.icon {
+					font-size: 21px;
+					color: $icons;
+				}
+			}
+		}
+	}
+}

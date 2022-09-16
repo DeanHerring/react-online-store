@@ -1,0 +1,38 @@
+@import "@styles/all.scss";
+
+.goods__sort {
+	align-self: flex-end;
+	position: relative;
+	p {
+		font-size: 21px;
+		color: $blue;
+	}
+	.goods__sort_list {
+		position: absolute;
+		top: 125%;
+		right: 0;
+		border: 1px solid $gray;
+		border-radius: 10px;
+		background-color: #fff;
+		display: none;
+		&.active {
+			display: inline-block;
+		}
+		.goods__sort_item {
+			padding: 12.5px;
+			color: $blue3;
+			border-bottom: 1px solid $gray;
+			transition: 0.2s;
+			cursor: pointer;
+			&.active {
+				color: $yellow;
+			}
+			&:hover {
+				color: $yellow;
+			}
+			&:last-child {
+				border-bottom: 0;
+			}
+		}
+	}
+}

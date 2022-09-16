@@ -1,0 +1,25 @@
+@import "@styles/all.scss";
+
+.goods__votes {
+	.goods__stars {
+		display: flex;
+		align-items: center;
+		ul {
+			display: flex;
+			li {
+				.icon {
+					display: inline-block;
+					&.yellow {
+						color: $yellow;
+					}
+					&.gray {
+						color: $gray;
+					}
+				}
+			}
+		}
+		p {
+			margin-left: 10px;
+		}
+	}
+}

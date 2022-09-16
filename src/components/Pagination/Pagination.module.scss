@@ -1,0 +1,68 @@
+@import "@styles/all.scss";
+
+// @pagination
+.pagination {
+	margin: 50px 0;
+	display: flex;
+	justify-content: center;
+	&__list {
+		display: flex;
+		justify-content: center;
+		.pagination__item {
+			a {
+				width: 50px;
+				height: 50px;
+				background-color: #fff;
+				border: 1px solid $gray;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 21px;
+				color: $blue;
+				margin: 0 2px;
+				transition: all 0.2s;
+				// @media
+				@media only screen and (max-width: 768px) {
+					display: none;
+				}
+				&:hover,
+				&.active {
+					background-color: $yellow;
+					color: #fff;
+					border: 1px solid $yellow;
+				}
+				&.prev,
+				&.next {
+					display: block;
+					text-align: center;
+					line-height: 50px;
+				}
+				&.start {
+					margin-right: 25px;
+				}
+				&.end {
+					margin-left: 25px;
+				}
+				&.hidden {
+					display: none;
+				}
+			}
+		}
+	}
+	&__eigenvalue {
+		display: none;
+		margin-left: 25px;
+		// @media
+		@media only screen and (max-width: 768px) {
+			display: block;
+		}
+		input {
+			width: 50px;
+			height: 50px;
+			border: 1px solid $gray;
+			font-size: 21px;
+			color: $blue;
+			text-align: center;
+		}
+	}
+}

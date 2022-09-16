@@ -1,0 +1,40 @@
+@import "@styles/all.scss";
+
+.goods__item {
+	padding: 15px;
+	border: 1px solid $gray;
+	.goods__img {
+		img {
+			width: 100%;
+		}
+	}
+	.goods__body {
+		a,
+		p {
+			color: $blue;
+		}
+		a {
+			font-size: 21px;
+			transition: 0.2s;
+			cursor: pointer;
+			&:hover {
+				color: $yellow;
+			}
+		}
+		p {
+			margin: 5px 0;
+			span {
+				font-size: 16px;
+				&.discount__price {
+					color: $red;
+				}
+				&:first-child {
+					text-decoration-line: line-through;
+				}
+				&:last-child {
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+@import "@styles/variables.scss";
+
+// @cart
+.cart {
+	h1 {
+		font-size: 50px;
+		color: $blue;
+		// @media
+		@media only screen and (max-width: 1024px) {
+			font-size: 35px;
+		}
+	}
+}

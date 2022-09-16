@@ -1,0 +1,32 @@
+@import "@styles/variables.scss";
+
+.cart__content {
+	margin-top: 50px;
+	.cart__list {
+		border-bottom: 1px solid $gray;
+	}
+	.cart__payment {
+		display: flex;
+		justify-content: flex-end;
+		button {
+			color: $green;
+			font-size: 23px;
+			font-weight: 600;
+			padding: 10px 50px;
+			background: rgba(0, 0, 0, 0);
+			border: 2px solid $green;
+			transition: all 0.2s;
+			cursor: pointer;
+			margin-top: 25px;
+			// @media
+			@media only screen and (max-width: 768px) {
+				padding: 10px 25px;
+				font-size: 18px;
+			}
+			&:hover {
+				color: $white;
+				background-color: $green;
+			}
+		}
+	}
+}

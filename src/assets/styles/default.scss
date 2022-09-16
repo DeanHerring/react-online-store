@@ -1,0 +1,31 @@
+@import "variables.scss";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, html, #wrapper {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, li {
+	list-style-type: none;
+}
+
+button, input, textarea {
+	outline: none;
+	border: 1px solid red;
+}
+
+h1, h2, h3, span, a, li, button, input, option, textarea, p {
+	font-family: $sans;
+	font-weight: 400;
+}
